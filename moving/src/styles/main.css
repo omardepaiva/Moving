@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.ImagemFundo {
+  background-image: url("../assets/bg1.png");
+  background-size: cover;
+}
