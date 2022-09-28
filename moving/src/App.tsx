@@ -1,16 +1,19 @@
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
-import NaviTeste from "./components/Teste";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/main.css";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Plans from "./pages/Plans";
+
 function App() {
   return (
     <div>
-      <NavBar />
-      <div className="w-full">
-        <img src="../src/assets/bg1.png" alt="teste" />
-      </div>
-      <NaviTeste/>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route  path="/plans" element={<Plans/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
