@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import NaviTeste from "./components/Teste";
 import "./styles/main.css";
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="w-full">
         <img src="../src/assets/bg1.png" alt="teste" />
       </div>
+      <NaviTeste/>
       <Footer />
     </div>
   );
