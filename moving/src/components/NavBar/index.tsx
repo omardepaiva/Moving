@@ -2,14 +2,13 @@ import "tw-elements";
 import { Link } from "react-router-dom";
 import ImgLogo from "../../assets/logo-preta.png";
 
-
 export default function NavBar() {
   return (
     <div>
       {/* <!-- Container for demo purpose --> */}
       <div>
         {/* <!-- Section: Design Block --> */}
-        <section className="mb-40">
+        <section className="">
           <nav className="navbar navbar-expand-lg shadow-md  bg-white relative flex items-center w-full justify-between">
             <div className="px-6 w-full flex flex-wrap items-center justify-between">
               <div className="flex items-center">
@@ -37,7 +36,7 @@ export default function NavBar() {
                     ></path>
                   </svg>
                 </button>
-                <a className="navbar-brand text-blue-600" href="#!">
+                <a className="navbar-brand" href="#!">
                   <Link to="/">
                     {" "}
                     <img className="w-40" src={ImgLogo} />{" "}
@@ -56,8 +55,7 @@ export default function NavBar() {
                       data-mdb-ripple="true"
                       data-mdb-ripple-color="light"
                     >
-                      <Link to='/'> Home</Link>
-                     
+                      <Link to="/"> Home</Link>
                     </a>
                   </li>
                   <li className="nav-item">
@@ -67,8 +65,7 @@ export default function NavBar() {
                       data-mdb-ripple="true"
                       data-mdb-ripple-color="light"
                     >
-                      <Link to='/about'>Sobre</Link>
-                      
+                      <Link to="/contact">Contato</Link>
                     </a>
                   </li>
                   <li className="nav-item mb-2 lg:mb-0">
@@ -78,33 +75,14 @@ export default function NavBar() {
                       data-mdb-ripple="true"
                       data-mdb-ripple-color="light"
                     >
-                      <Link to='/plans'>Planos</Link>
+                      <Link to="/plans">Planos</Link>
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="flex items-center lg:ml-auto">
-                <button
-                  type="button"
-                  className="inline-block px-6 py-2.5 mr-2 bg-transparent text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  Login
-                </button>
-                <button
-                  type="button"
-                  className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                  data-mdb-ripple="true"
-                  data-mdb-ripple-color="light"
-                >
-                  Sign up for free
-                </button>
-              </div>
+              <div className="flex items-center lg:ml-auto"></div>
             </div>
           </nav>
-
-         
         </section>
         {/* <!-- Section: Design Block --> */}
       </div>
