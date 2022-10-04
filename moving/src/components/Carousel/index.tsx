@@ -1,6 +1,6 @@
 import "tw-elements";
 import ImgBg from "../../assets/bg1.png";
-import PhoneImg from "../../assets/phone.png";
+
 export default function Carousel() {
   return (
     <div
@@ -34,11 +34,7 @@ export default function Carousel() {
         </div>
         <div className="carousel-item relative float-left w-full">
           <div className="">
-            <img
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
-              className=""
-              alt="..."
-            />
+            <img src={ImgBg} className="" alt="..." />
           </div>
           <div className="carousel-caption hidden md:block absolute text-center">
             <h5 className="text-xl">Second slide label</h5>

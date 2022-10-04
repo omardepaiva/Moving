@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer";
 
 import NavBar from "../../components/NavBar";
-import Body from "../../components/Body";
+
 import Carousel from "../../components/Carousel";
 
 export default function Home() {
