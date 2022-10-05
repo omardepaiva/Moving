@@ -19,10 +19,8 @@ export default function Plans() {
     <div>
       <h1>ESTÁ NA PÁGINA PLANOS</h1>
       <NavBar />
-      <section style={sectionStyle}>
-        <Cards title="Mensal" value={15.8} subtitle="1" />
-        <Cards title="Semestral" value={20} subtitle="2" />
-        <Cards title="anual" value={50} subtitle="3" />
+      <section>
+        <Cards />
       </section>
       <Footer />
     </div>
